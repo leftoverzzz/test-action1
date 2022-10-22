@@ -9732,13 +9732,13 @@ __nccwpck_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__nccwpck_require__.n(_actions_github__WEBPACK_IMPORTED_MODULE_1__);
 
 
-const username = _actions_core__WEBPACK_IMPORTED_MODULE_0___default().getInput("username", { required: true });
+const username = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("username", { required: true });
 console.log(`hello ${username}`);
 const time = new Date().toTimeString();
-_actions_core__WEBPACK_IMPORTED_MODULE_0___default().setOutput("time", `time is ${time}`);
-const payload = JSON.stringify((_actions_github__WEBPACK_IMPORTED_MODULE_1___default().context.payload));
+_actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput("time", `time is ${time}`);
+const payload = JSON.stringify(_actions_github__WEBPACK_IMPORTED_MODULE_1__.context.payload);
 console.log(`payload is :${payload}`);
-_actions_core__WEBPACK_IMPORTED_MODULE_0___default().notice('Something happened that you might want to know about.');
+_actions_core__WEBPACK_IMPORTED_MODULE_0__.notice('Something happened that you might want to know about.');
 
 })();
 
